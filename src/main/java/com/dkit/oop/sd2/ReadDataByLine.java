@@ -29,14 +29,14 @@ public class ReadDataByLine
 
         try (Scanner in = new Scanner(inputFile))
         {
-            double sum = 0;
+
             while (in.hasNextLine())
             {
                 String line = in.nextLine();             // read full line
                 String [] data = line.split(",");  // split using , as delimeter
                 String name = data[0];
                 String id = data[1];
-                int mark1 = Integer.parseInt(data[2]);
+                int mark1 = Integer.parseInt(data[2]);  //"76" -> 76
                 int mark2 = Integer.parseInt(data[3]);
                 int mark3 = Integer.parseInt(data[4]);
                 Student s = new Student(name,id,mark1,mark2,mark3);

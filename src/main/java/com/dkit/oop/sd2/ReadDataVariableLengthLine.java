@@ -31,13 +31,15 @@ public class ReadDataVariableLengthLine
 
         try (Scanner in = new Scanner(inputFile))
         {
-            double sum = 0;
+
             while (in.hasNextLine())
             {
                 String line = in.nextLine();
                 String [] data = line.split(",");
+
                 String name = data[0];
                 String id = data[1];
+
                 ArrayList <Integer> marks = new ArrayList<>();
                 for (int i = 2; i < data.length; i++)  //continue to end of data line
                 {

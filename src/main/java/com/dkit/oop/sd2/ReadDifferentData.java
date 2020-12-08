@@ -31,7 +31,7 @@ public class ReadDifferentData
 
         try (Scanner in = new Scanner(inputFile))
         {
-            double sum = 0;
+
             while (in.hasNextLine())
             {
                 String line = in.nextLine();

@@ -16,6 +16,7 @@ public class Pupil
         this.marks = marks;
     }
 
+
     public String getName()
     {
         return name;
