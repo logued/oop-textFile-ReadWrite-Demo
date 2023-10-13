@@ -33,7 +33,7 @@ public class ReadDataByLine
             while (in.hasNextLine())
             {
                 String line = in.nextLine();             // read full line
-                String [] data = line.split(",");  // split using , as delimeter
+                String [] data = line.split(",");  // split using , as delimiter
                 String name = data[0];
                 String id = data[1];
                 int mark1 = Integer.parseInt(data[2]);  //"76" -> 76

@@ -23,7 +23,8 @@ public class ReadDataByToken
     public static void main(String[] args)
     {
         ArrayList<Student> studentList = new ArrayList<>();
-        File inputFile = new File("students1.txt");
+        String fileName = "students1.txt";
+        File inputFile = new File(fileName);
 
         try (Scanner in = new Scanner(inputFile))
         {
@@ -41,7 +42,7 @@ public class ReadDataByToken
 
         } catch (FileNotFoundException exception)
         {
-            System.out.println("FileNotFoundException caught." + exception);
+            System.out.println("FileNotFoundException caught. The file " +fileName+ " may not exist." + exception);
         } catch (InputMismatchException exception)
         {
             System.out.println("InputMismatchexception caught." + exception);
